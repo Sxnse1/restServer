@@ -28,6 +28,7 @@ const usuariosPut = (req, res) => {
 const usuariosPost = (req, res) => {
 
     const body = req.body;
+    const usuario = new usuario(body);
 
     res.json({
         msg: 'post API',
